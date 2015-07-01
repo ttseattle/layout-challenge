@@ -114,13 +114,14 @@ nav a:hover, nav a:focus {
 }
 
 /* Styles which apply only to medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { 
+@media screen and (min-width: 992px) {	 
 	body {
 		background-image: url("../img/background.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 
 		font-size: 18px;
+
 	}
 
 	div#main {
