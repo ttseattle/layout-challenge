@@ -1,3 +1,5 @@
+/* Styles which apply to all devices (will be overridden for medium to large devices) */
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic);
 
@@ -48,7 +50,7 @@ h3 {
 	font-color: #505050;
 }
 
-#page_header, #info, #menu, #about_us, #footer {
+#page_header, #info, #menu, #about, #footer {
 	padding: 1em;
 }
 
@@ -85,11 +87,6 @@ dd {
 	text-align: right;
 }
 
-.container-fluid {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
 nav ul {
 	padding: 0;
 	margin: 0;
@@ -109,7 +106,13 @@ nav a:hover, nav a:focus {
 	color: #00E;
 }
 
+.container-fluid {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /* Styles which apply only to medium devices (desktops, 992px and up) */
+
 @media screen and (min-width: 992px) {	 
 	body {
 		background-image: url("../img/background.jpg");
@@ -117,7 +120,6 @@ nav a:hover, nav a:focus {
 		background-attachment: fixed;
 
 		font-size: 18px;
-
 	}
 
 	#tag_line {
@@ -127,15 +129,14 @@ nav a:hover, nav a:focus {
 		margin: 0;
 	}
 
-	.container-fluid {
-		margin: 20px; 
-		margin-left: 30%; /* overrides left, leaves top, bottom, and right */
-	}
-
 	nav {
 		position: absolute;
 		top: 10px;
 		right: 10px;
 	}
-
+	
+	.container-fluid {
+		margin: 20px; 
+		margin-left: 30%; /* overrides left, leaves top, bottom, and right */
+	}
 }
