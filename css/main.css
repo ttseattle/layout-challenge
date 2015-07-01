@@ -63,8 +63,7 @@ h3 {
 }
 
 #menu {
-	background-color: rgb(207, 205, 140);
-	background-opacity: 0.5;
+	background-color: rgba(207, 205, 140, 0.5);
 }
 
 dt {
